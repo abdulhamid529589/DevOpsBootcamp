@@ -1,0 +1,57 @@
+1 => Linux Accounts & Groups (Users & Permissions Part 1)
+1.1 => first of all see stores user information and everyone can read it, but only root user can change the file
+
+┌─[abdulhamid@parrot]──["]
+│✔ (2s)
+└─⚡ cat /etc/passwd
+
+
+2 => now let's learn how to manage users
+2.2 => do not edit these access control files with a text editor and instead you should use the dedicated commands
+
+┌─[abdulhamid@parrot]──["]
+│✔ (671s)
+└─⚡ sudo adduser hackwithme
+
+2.3 => Change password
+┌─[abdulhamid@parrot]──["]
+│✔ (6s)
+└─⚡ sudo passwd hackwithme
+
+2.4 => Switch user
+┌─[abdulhamid@parrot]──["]
+│✔ (167s)
+└─⚡ su - hackwithme
+Password: 
+┌─[hackwithme@parrot]─[~]
+└──╼ $
+
+
+2.5 => Switch as root user
+┌─[root@parrot]─[/home/abdulhamid]
+└──╼ #exit
+exit
+
+┌─[abdulhamid@parrot]──[abdulhamid"]
+│✔ (17s)
+└─⚡ sudo su
+┌─[root@parrot]─[/home/abdulhamid]
+└──╼ #
+
+
+2.6 => add groups and see the group names 
+┌─[abdulhamid@parrot]──[abdulhamid"]
+│✔ (126s)
+└─⚡ sudo groupadd devops
+
+┌─[abdulhamid@parrot]──[abdulhamid"]
+│✔ (0s)
+└─⚡ cat /etc/group
+
+
+3 => File Ownership and Permissions
+3.1 => Change Ownership
+
+
+How to use vim editor 
+
